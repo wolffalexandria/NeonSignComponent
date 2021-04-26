@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const NeonSign = ({ flicker }) => {
+const NeonSign = ({ flicker, text }) => {
   return (
     <h1 id="neonsign" className={flicker === true ? "flicker" : ""}>
-      Alexandria Wolff
+      {text}
     </h1>
   );
 };
